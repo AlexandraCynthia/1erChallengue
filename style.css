@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+.area1{
+    background-color: #6962AD;
+    height: 100%;
+    width: 30%;
+    height: 100%;
+}
+
+.area2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #6962AD;
+    width: 35%;
+    height: 100%;
+}
+
+.area3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color:#6962AD;
+    width: 35%;
+    height: 100%;
+}
+
+.textoEncrip{
+    width: 90%;
+    height: 60%;
+    background-color: white;
+    text-align: center;
+    margin-left: 4%;
+    padding-top: 8%;
+    padding-bottom: 0%;
+  
+}
+
+.textNormal{
+    width: 90%;
+    height: 350px;
+    margin-left: 4%;
+    text-align:left;
+    border: none;
+    background-color: #6962AD;
+    color: aliceblue;
+    font-size: 20px;
+
+
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botonCopiar{
+    width: 50%;
+    height:5% ;
+    margin-left: 25%;
+    border-radius:15px 15px 15px 15px;
+}
+
+
+.parrafo{
+    padding-left: 5%;
+    padding-top: 5%;
+    color: whitesmoke;
+}
+
+.img1{
+    width: 21%;
+    height: auto;
+    padding: 15%;
+}
+
+.botonEncriptar{
+    width: 40%;
+    height:200% ;
+    border-radius:15px 15px 15px 15px;
+    background-color: pink;
+}
+
+#texto1{
+    color: #F5EEE6;
+    padding-left: 20%;
+}
+
+
+#texto2{
+    color: #F5EEE7;
+    padding-left: 20%;
+    margin-top:-10%;
+}
