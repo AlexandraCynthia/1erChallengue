@@ -17,7 +17,8 @@ function encriptarTexto(){
             document.getElementById('textEncriptado').innerText = textoEncriptado
             // Almacenamos el texto encriptado en una variable global
             textoEncriptadoGlobal = textoEncriptado;
-            document.querySelector('#inputText').value = '';
+            //Una vez apretado el botón de encriptar, se borrará el texto para aparecer en casilla de texto encriptado, pero quedará almaceado en la variable global
+            document.getElementById('inputText').value = '';
             
         }else{
             //Si no se ha ingresado texto, mostrar la imagen y ocultar el botón copiar y texto encriptado
@@ -26,6 +27,7 @@ function encriptarTexto(){
             document.getElementById("texto2").style.display="block";
             document.getElementById("copiarBtn").style.display="none";
             document.getElementById("textEncriptado").style.display="none";
+            alert("No se ha ingresado ningún texto");
         }
 
     }
@@ -38,17 +40,25 @@ function encriptar(texto){
     texto=texto.replace(/u/g, "ufat");
     return texto;
  }
+
+
  function copiarTexto(){
+    //Obtiene contenido encriptado del elemento con id "textEncriptado" y se almacena en variable textoEncriptado
     var textoEncriptado = document.getElementById('textEncriptado').innerText;
-    var texarea=document.createElement('textarea');
+    //Crea un elemento textarea y le asigna el valor del texto encriptado
+    var texarea = document.createElement('textarea');
     texarea.value = textoEncriptado;
+    //Se agrega textarea al cuerpo del documento
     document.body.appendChild(texarea);
+    //Selecciona contenido del área de texto
     texarea.select();
+    //Ejecuta comando "copy" para copiarlo al portapapeles
     document.execCommand("copy");
+    //Remueve elemento textarea del cuerpo del documento luego de copiarlo
     document.body.removeChild(texarea);
     alert ("texto copiado al portapapeles")
     
-    //Borrar despues de copiar
+    //Borrar texto desencriptado despues de dar click en botón copiar
     document.getElementById("textEncriptado").innerText="";
     //Habilitar botón para desencriptar
     document.getElementById('desencriptarBtn').removeAttribute('disabled');
