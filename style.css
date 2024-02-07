@@ -1,3 +1,8 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
 body{
     display: flex;
     justify-content: center;
@@ -53,8 +58,8 @@ html{
     margin-left: 4%;
     text-align:left;
     border: none;
-    background-color: #6962AD;
-    color: aliceblue;
+    background-color: #9F70FD;
+    color: #EEEEEE;
     font-size: 20px;
 
 
@@ -64,6 +69,9 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .botonCopiar{
@@ -71,6 +79,9 @@ html{
     height:5% ;
     margin-left: 25%;
     border-radius:15px 15px 15px 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
 }
 
 
@@ -91,6 +102,9 @@ html{
     height:200% ;
     border-radius:15px 15px 15px 15px;
     background-color: pink;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
 }
 
 #texto1{
@@ -104,3 +118,8 @@ html{
     padding-left: 20%;
     margin-top:-10%;
 }
+
+
+.area3 h2{
+   margin-left: 15%;
+} 
