@@ -120,4 +120,73 @@ body{
     margin-top:-10%;
 }
 
+/*Medidas Query*/
 
+@media all and (max-width: 480px) { 
+
+     body{
+        display: block;
+        justify-content: center;
+        height: auto
+    }
+
+    html{
+        
+        height: 100%;
+    }
+
+    .area1{
+        width: 100%;
+        height: auto;
+    }
+
+    .img1{
+        width: 10%;
+        padding: 0 0;
+        margin: 10px 10px;
+    }
+    .area2{
+        display: block;
+        background-color: #6962AD;
+        width: 100%;
+        height: auto;
+    }
+
+    .area3{
+        display: flex;
+        flex-direction: column;
+        background-color:#6962AD;
+        width: 100%;
+        height: auto;
+    }
+
+    .area3 p{
+        position: absolute;
+        font-size: 70%;
+        margin-left: 25%;
+    }
+
+    .area3 h2{
+        position: absolute;
+        font-size: 70%;
+        margin-left: 25%;
+    }
+
+    .img{
+        width: 40%;
+        height: auto;
+        margin: 0 0;
+        padding: 0 0 0 50;
+    }
+
+    .textoEncrip{
+        margin: 3%;
+    }
+
+    .botonCopiar{
+        margin: 0.5%;
+        margin-left: 22%;
+    }
+
+  
+}
