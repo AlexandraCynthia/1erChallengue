@@ -54,15 +54,6 @@ function encriptar(texto){
  }
 
  function desencriptarTexto(){
-
-    //document.getElementById('inputText').value.toLowerCase() = desencriptar(textoEncriptadoGlobal);
-
-    //document.getElementById('inputText').value = desencriptar(textoEncriptadoGlobal);
-
-    console.log(inputText.value)
-    console.log(textoEncriptadoGlobal)
-
-    
     if (textoEncriptadoGlobal!=document.getElementById('inputText').value){
         document.getElementById('inputText').value = desencriptar(inputText.value)
     }else{
