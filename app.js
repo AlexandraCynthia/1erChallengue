@@ -54,20 +54,26 @@ function encriptar(texto){
  }
 
  function desencriptarTexto(){
-    if (textoEncriptadoGlobal!=document.getElementById('inputText').value){
-        document.getElementById('inputText').value = desencriptar(inputText.value)
-    }else{
-        document.getElementById('inputText').value = desencriptar(textoEncriptadoGlobal)
-    }
+    var textoEnc = document.getElementById('inputText').value.toLowerCase();
+    var desencriptado = desencriptar(textoEnc);
+
+    //oculta la imagen y el texto
+    document.getElementById("img").style.display="none"
+    document.getElementById("texto1").style.display="none"
+    document.getElementById("texto2").style.display="none"
+
+    //muestra texto desencriptado
+    document.getElementById('textEncriptado').innerText = desencriptado;
+    document.getElementById('textEncriptado').style.display= "block";
+
+    
   
 }
-
-
  function desencriptar(texto){
-    texto = texto.replace(/enter/g, "e");
-    texto= texto.replace(/imes/g, "i");
-    texto=texto.replace(/ai/g, "a");
-    texto=texto.replace(/ober/g, "o");
     texto=texto.replace(/ufat/g, "u");
+    texto=texto.replace(/ober/g, "o");
+    texto=texto.replace(/ai/g, "a");
+    texto= texto.replace(/imes/g, "i");
+    texto = texto.replace(/enter/g, "e");
     return texto;
  }

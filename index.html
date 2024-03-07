@@ -20,7 +20,7 @@
     </section>
      
     <section class="area2">
-            <input type="text" class="textNormal" id="inputText" placeholder="Ingresa un texto para encriptar">
+            <textarea class="textNormal" cols="30" rows="10" id="inputText" placeholder="Ingresa un texto para encriptar"></textarea>
             <p class="parrafo">Solo letras minúsculas y sin acentos</p> 
             <div class="botones">
                     <button onclick="encriptarTexto();" class="botonEncriptar" >Encriptar!</button>
@@ -31,12 +31,12 @@
     </section>
 
     <section class="area3">
-            <img src="./imgs/imagen.svg" style="display:block" id="img" class="img">
-            <h2 style="display:block" id="texto1" class="mensaje">Ningún mensaje fue encontrado</h2>
-            <p style="display:block" id="texto2">Ingresa el texto que desees encriptar o desencriptar</p>
-            <div class="textoEncrip" id="textEncriptado" style="display:none"></div>
-            <button onclick="copiarTexto();" id="copiarBtn" class="botonCopiar" style="display:none">Copiar</button>
-        </section>
+        <img src="./imgs/imagen.svg" style="display:block" id="img" class="img">
+        <h2 style="display:block" id="texto1" class="mensaje">Ningún mensaje fue encontrado</h2>
+        <p style="display:block" id="texto2">Ingresa el texto que desees encriptar o desencriptar</p>
+        <div class="textoEncrip" id="textEncriptado" style="display:none"></div>
+        <button onclick="copiarTexto();" id="copiarBtn" class="botonCopiar" style="display:none">Copiar</button>
+    </section>
 
     <script src="app.js"></script>
 </body>

@@ -25,7 +25,9 @@ body{
     justify-content: space-evenly;
     background-color: #6962AD;
     width: 35%;
-    height: 100%;
+    height: auto;
+    padding: 21px 30px 30px 80px;
+    border: black;
 }
 
 .copyright{
@@ -44,6 +46,7 @@ body{
     background-color:#6962AD;
     width: 35%;
     height: 100%;
+    border: black;
 }
 
 .area3 h2{
@@ -51,8 +54,10 @@ body{
  } 
 
  .parrafo{
-    padding-left: 5%;
+    padding-left: 20%;
     padding-top: 5%;
+    padding-bottom: 8%;
+
     color: whitesmoke;
 }
 
@@ -131,6 +136,14 @@ body{
     margin-top:-10%;
 }
 
+.botonEncriptar:hover{
+    background-color:#FF8F8F;
+  }
+
+  .botonCopiar:hover{
+    background-color: #B4BDFF;
+  }
+
 /*Medidas Query*/
 
 @media all and (max-width: 480px) { 
@@ -148,7 +161,7 @@ body{
 
     .area1{
         width: 100%;
-        height: auto;
+        height: 50%;
     }
 
     .img1{
@@ -159,8 +172,9 @@ body{
     .area2{
         display: block;
         background-color: #6962AD;
-        width: 100%;
-        height: auto;
+        width: 80%;
+        height: 100%;
+        padding-left:42px ;
     }
 
     .area3{
@@ -168,13 +182,17 @@ body{
         flex-direction: column;
         background-color:#6962AD;
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     .area3 p{
         position: absolute;
         font-size: 70%;
         margin-left: 25%;
+    }
+
+    p{
+        padding: 15px 15px;
     }
 
     .area3 h2{
@@ -203,5 +221,8 @@ body{
     display: none;
   }
 
+  .botonEncriptar:hover{
+    background-color:red;
+  }
 
 }
