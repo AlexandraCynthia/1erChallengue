@@ -62,9 +62,13 @@ function encriptar(texto){
     document.getElementById("texto1").style.display="none"
     document.getElementById("texto2").style.display="none"
 
+
     //muestra texto desencriptado
     document.getElementById('textEncriptado').innerText = desencriptado;
     document.getElementById('textEncriptado').style.display= "block";
+
+    document.getElementById("copiarBtn").style.display="inline-block";
+
 
     
   
