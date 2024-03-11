@@ -81,3 +81,11 @@ function encriptar(texto){
     texto = texto.replace(/enter/g, "e");
     return texto;
  }
+
+ function convertirTexto(){
+    var input = document.getElementById('inputText');
+    var texto = input.value;
+
+    texto = texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    input.value = texto;
+ }
